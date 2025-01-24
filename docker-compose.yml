@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  app:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    image: twitter_webhook:1.0
+    container_name: twitter_webhook_app
+    volumes:
+      - ./app:/app
+    ports:
+      - "4500:80"
