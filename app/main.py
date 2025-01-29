@@ -46,9 +46,7 @@ def register_webhook():
         )
 
         if response.status_code != 200:
-            return jsonify(
-                message="Failed to register webhook",
-            ), response.status_code
+            raise Exception("Failed to register webhook")
 
         return jsonify(message="Webhook registered successfully!")
 
