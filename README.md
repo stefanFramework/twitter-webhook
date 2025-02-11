@@ -7,7 +7,7 @@ The webhook listens for mentions and processes tweet creation events.
 
 - Docker & Docker Compose installed
 - Python 3.11.8 (if running outside Docker)
-- A Twitter Developer Account with API keys and tokens
+- A Twitter Enterprise Account with API keys and tokens
 - An API Gateway as a service like `ngrok` or publicly accessible URL to register the webhook
 
 ## Setup Instructions
